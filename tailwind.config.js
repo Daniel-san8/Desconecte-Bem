@@ -12,6 +12,10 @@ export default {
         sectionLeft: "rgba(63, 55, 42, 1)",
         sectionRight: " rgba(246, 238, 219, 1)",
       },
+
+      fontFamily: {
+        Beiruti: ["beiruti", "sans serif"],
+      },
     },
   },
   plugins: [],
