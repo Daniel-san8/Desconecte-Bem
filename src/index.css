@@ -19,4 +19,12 @@
   .placeholderMax::placeholder {
     font-size: 1.5rem;
   }
+
+  .boxShadowButton {
+    box-shadow: 0 8px rgba(143, 160, 108, 1);
+  }
+
+  .boxShadowButtonTop {
+    box-shadow: -2px 0 rgba(143, 160, 108, 1);
+  }
 }

@@ -16,7 +16,10 @@ export default function SectionRight() {
           </div>
         </div>
 
-        <form className="lg:flex lg:flex-col lg:pt-10 lg:px-9 lg:gap-y-16">
+        <form
+          className="lg:flex lg:flex-col lg:pt-10 lg:px-9 lg:gap-y-16"
+          id="form-email"
+        >
           <div className="relative barra-horizontal">
             <input
               type="email"
@@ -39,6 +42,15 @@ export default function SectionRight() {
         <a href="#" className="underline lg:self-center lg:pt-10">
           Esqueci minha senha
         </a>
+      </div>
+      <div className="lg:pt-14">
+        <button
+          type="submit"
+          id="form-email"
+          className="text-white font-semibold bg-botaoLogin lg:text-4xl lg:py-4 lg:px-20 lg:rounded-l-full lg:rounded-br-full boxShadowButton"
+        >
+          Entrar
+        </button>
       </div>
     </section>
   );
