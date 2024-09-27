@@ -26,16 +26,16 @@ export default function SectionRight() {
               name="email"
               id="email"
               placeholder="E-mail"
-              className="outline-none placeholderMax"
+              className="outline-none placeholderMax w-full"
             />
           </div>
-          <div className="relative barra-horizontal">
+          <div className="relative barra-horizontal ">
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Senha"
-              className="outline-none placeholderMax"
+              className="outline-none placeholderMax w-full"
             />
           </div>
         </form>
