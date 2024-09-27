@@ -1,6 +1,6 @@
 export default function Sectionleft() {
   return (
-    <section className="bg-sectionLeft lg:h-full lg:flex lg:flex-col ">
+    <section className="hidden bg-sectionLeft lg:h-full lg:flex lg:flex-col ">
       <div className="lg:px-16 lg:pt-40 lg:flex-1">
         <h1 className="font-semibold text-white lg:text-5xl ">
           Bem vindo(a) ao Desconecte Bem!

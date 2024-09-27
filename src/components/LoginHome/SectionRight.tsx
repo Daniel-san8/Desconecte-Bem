@@ -1,7 +1,7 @@
 export default function SectionRight() {
   return (
-    <section className="bg-sectionRight lg:h-full lg:flex lg:flex-col lg:items-center lg:justify-center">
-      <div className="bg-white lg:w-96 lg:h-96 lg:rounded-3xl lg:flex lg:flex-col">
+    <section className="h-screen bg-sectionRight lg:h-full lg:flex lg:flex-col lg:items-center lg:justify-center">
+      <div className="bg-sectionRight lg:bg-white lg:w-96 lg:h-96 lg:rounded-3xl lg:flex lg:flex-col">
         <div className="lg:flex lg:items-center">
           <img src="/assets/logoDark.png" alt="logo-entrar" width="138px" />
 
@@ -47,7 +47,7 @@ export default function SectionRight() {
         <button
           type="submit"
           id="form-email"
-          className="text-white font-semibold bg-botaoLogin lg:text-4xl lg:py-4 lg:px-20 lg:rounded-l-full lg:rounded-br-full boxShadowButton"
+          className="text-white font-semibold bg-botaoLogin lg:text-4xl lg:py-4 lg:px-20 lg:rounded-l-full lg:rounded-br-full lg:boxShadowButton"
         >
           Entrar
         </button>
