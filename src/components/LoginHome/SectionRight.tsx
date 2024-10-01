@@ -1,7 +1,7 @@
 export default function SectionRight() {
   return (
     <section className="h-screen bg-sectionRight flex flex-col justify-center items-center lg:h-full ">
-      <div className="p-6 bg-white rounded-3xl flex flex-col lg:w-96 lg:h-96">
+      <div className="p-6 bg-white rounded-3xl w-72 h-72 flex flex-col lg:w-96 lg:h-96">
         <div className="lg:flex lg:items-center">
           <img
             src="/assets/logoDark.png"
@@ -10,7 +10,7 @@ export default function SectionRight() {
             className="hidden md:block"
           />
 
-          <div className="pb-7 lg:pb-0 lg:flex lg:flex-col">
+          <div className="pb-7 lg:pb-0 flex flex-col items-center md:items-start">
             <h1 className="text-4xl text-center font-semibold lg:text-5xl lg:text-start">
               Entrar
             </h1>
