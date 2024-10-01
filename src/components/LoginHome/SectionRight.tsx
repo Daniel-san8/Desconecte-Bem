@@ -1,7 +1,7 @@
 export default function SectionRight() {
   return (
     <section className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full ">
-      <div className="p-6 bg-white rounded-3xl w-72 h-72 flex flex-col md:w-80 md:h-96 md:p-0 lg:w-96 ">
+      <div className="p-6 bg-white rounded-3xl w-72 h-72 flex flex-col md:w-80 md:h-96 md:p-0 md:mt-6 lg:w-96 ">
         <div className="md:flex md:items-center">
           <img
             src="/assets/logoDark.png"
