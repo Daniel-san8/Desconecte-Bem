@@ -24,7 +24,7 @@ export default function SectionRight() {
         </div>
 
         <form
-          className="lg:flex lg:flex-col lg:pt-10 lg:px-9 lg:gap-y-16"
+          className="flex flex-col gap-y-8 lg:pt-10 lg:px-9 lg:gap-y-16"
           id="form-email"
         >
           <div className="relative barra-horizontal">
