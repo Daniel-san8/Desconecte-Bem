@@ -1,3 +1,5 @@
+import ButtonLogin from "./ButtonLogin";
+
 export default function SectionRight() {
   return (
     <section className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full ">
@@ -53,15 +55,7 @@ export default function SectionRight() {
           Esqueci minha senha
         </a>
       </div>
-      <div className="py-7 md:pt-14">
-        <button
-          type="submit"
-          id="form-email"
-          className="text-white font-semibold bg-botaoLogin text-3xl px-12 py-2 md:text-4xl md:py-4 md:px-20 rounded-l-full rounded-br-full boxShadowButton"
-        >
-          Entrar
-        </button>
-      </div>
+      <ButtonLogin texto="Entrar" />
     </section>
   );
 }
