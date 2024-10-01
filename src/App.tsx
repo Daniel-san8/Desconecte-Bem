@@ -3,7 +3,7 @@ import SectionRight from "./components/LoginHome/SectionRight";
 
 export default function App() {
   return (
-    <div className=" h-screen font-Beiruti lg:grid lg:grid-cols-2 lg:items-center">
+    <div className=" h-screen font-Beiruti md:grid md:grid-cols-2 md:items-center">
       <Sectionleft />
       <SectionRight />
     </div>

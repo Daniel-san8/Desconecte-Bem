@@ -1,27 +1,27 @@
 export default function Sectionleft() {
   return (
-    <section className="hidden bg-sectionLeft lg:h-full lg:flex lg:flex-col ">
-      <div className="lg:px-16 lg:pt-40 lg:flex-1">
-        <h1 className="font-semibold text-white lg:text-5xl ">
+    <section className="hidden bg-sectionLeft md:h-full md:flex md:flex-col ">
+      <div className="md:px-16 md:pt-20 lg:flex-1 lg:pt-40">
+        <h1 className="font-semibold text-white md:text-5xl ">
           Bem vindo(a) ao Desconecte Bem!
         </h1>
       </div>
 
-      <p className="text-white text-base lg:font-normal lg:px-16 lg:mt-1 lg:mr-40">
+      <p className="text-white text-base md:font-normal md:px-16 md:mt-1 md:mr-0 lg:mr-40">
         Lhe acompanhando na jornada rumo a uma vida mais balanceada.
       </p>
 
-      <div className="lg:flex lg:w-full ">
+      <div className="md:flex md:w-full md:flex-1">
         <img
           src="/assets/imageSectionLeft.png"
           alt="image-section"
-          className="lg:w-3/4 lg:h-3/4 lg:self-end"
+          className="md:w-3/4 md:h-3/4 md:self-end lg:w-3/4"
         />
 
         <img
           src="/assets/logoLight.png"
           alt="logo"
-          className=" lg:h-44 lg:self-end lg:pb-8"
+          className=" md:h-36 md:self-end md:pb-8 lg:h-44"
         />
       </div>
     </section>

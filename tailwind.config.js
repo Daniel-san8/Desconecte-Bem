@@ -14,6 +14,7 @@ export default {
         cadastrar: "rgba(21, 94, 32, 1)",
         botaoLogin: " rgba(174, 196, 130, 1)",
         boxShadowButton: " rgba(143, 160, 108, 1);",
+        retangulo: " rgba(63, 55, 42, 1)",
       },
 
       fontFamily: {
