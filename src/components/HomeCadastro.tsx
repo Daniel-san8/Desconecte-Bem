@@ -18,7 +18,7 @@ export default function HomeCadastro() {
           />
           <form
             action=""
-            className="flex flex-col gap-y-8 md:px-9"
+            className="flex flex-col gap-y-4 md:gap-y-8 md:px-9"
             id="cadastroForm"
             method="post"
           >
@@ -38,7 +38,11 @@ export default function HomeCadastro() {
           </form>
         </WhiteBox>
 
-        <ButtonLogin texto="Cadastrar-se" idForm="cadastroForm" />
+        <ButtonLogin
+          className="text-white font-semibold bg-botaoLogin text-2xl px-6 py-1 rounded-full boxShadowButton md:text-3xl lg:rounded-none lg:rounded-l-full lg:rounded-br-full lg:px-10"
+          texto="Cadastrar-se"
+          idForm="cadastroForm"
+        />
       </div>
     </div>
   );

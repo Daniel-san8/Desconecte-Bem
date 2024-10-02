@@ -42,7 +42,11 @@ export default function SectionRight() {
           Esqueci minha senha
         </a>
       </WhiteBox>
-      <ButtonLogin texto="Entrar" idForm="form-email" />
+      <ButtonLogin
+        className="text-white font-semibold bg-botaoLogin text-3xl px-12 py-2 md:text-4xl md:py-4 md:px-20 rounded-l-full rounded-br-full boxShadowButton"
+        texto="Entrar"
+        idForm="form-email"
+      />
     </section>
   );
 }
