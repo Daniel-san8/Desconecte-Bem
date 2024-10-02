@@ -1,7 +1,7 @@
 export default function Sectionleft() {
   return (
     <section className="hidden bg-sectionLeft md:h-full md:flex md:flex-col ">
-      <div className="md:px-16 md:pt-20 lg:flex-1 lg:pt-40">
+      <div className="md:px-16 md:pt-20 lg:pt-40">
         <h1 className="font-semibold text-white md:text-5xl ">
           Bem vindo(a) ao Desconecte Bem!
         </h1>

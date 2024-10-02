@@ -1,3 +1,4 @@
+import React from "react";
 import BoxTitle from "./LoginHome/BoxTitle";
 import ButtonLogin from "./LoginHome/ButtonLogin";
 import InputLogin from "./LoginHome/InputLogin";
@@ -5,11 +6,18 @@ import Sectionleft from "./LoginHome/SectionLeft";
 import WhiteBox from "./LoginHome/WhiteBox";
 
 export default function HomeCadastro() {
+  React.useEffect(() => {
+    document.title = "Cadastrar | Desconecte Bem";
+  }, []);
+
   return (
     <div className="h-full bg-sectionRight font-Beiruti md:grid md:grid-cols-2 md:items-center">
       <Sectionleft />
 
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
+        <div>
+          <img src="/assets/formaMobile.png" alt="forma" />
+        </div>
         <WhiteBox>
           <BoxTitle
             className="pb-7 flex flex-col items-center md:items-center md:py-10"
