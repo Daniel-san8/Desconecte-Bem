@@ -1,4 +1,5 @@
 import ButtonLogin from "./ButtonLogin";
+import InputLogin from "./InputLogin";
 
 export default function SectionRight() {
   return (
@@ -30,19 +31,17 @@ export default function SectionRight() {
           id="form-email"
         >
           <div className="relative barra-horizontal">
-            <input
+            <InputLogin
+              seletor="email"
               type="email"
-              name="email"
-              id="email"
               placeholder="E-mail"
               className="outline-none md:placeholderMax w-full"
             />
           </div>
           <div className="relative barra-horizontal ">
-            <input
+            <InputLogin
               type="password"
-              name="password"
-              id="password"
+              seletor="senha"
               placeholder="Senha"
               className="outline-none md:placeholderMax w-full"
             />
