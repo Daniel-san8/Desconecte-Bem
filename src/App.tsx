@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
 import HomeLogin from "./components/HomeLogin";
 import HomeCadastro from "./components/HomeCadastro";
 
