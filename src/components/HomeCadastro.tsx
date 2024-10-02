@@ -4,6 +4,8 @@ import ButtonLogin from "./LoginHome/ButtonLogin";
 import InputLogin from "./LoginHome/InputLogin";
 import Sectionleft from "./LoginHome/SectionLeft";
 import WhiteBox from "./LoginHome/WhiteBox";
+import SectionMobile from "./CadastroHome/SectionMobile";
+import SectionInferiorMobile from "./CadastroHome/SectionInferiorMobile";
 
 export default function HomeCadastro() {
   React.useEffect(() => {
@@ -19,19 +21,8 @@ export default function HomeCadastro() {
       <div className="bg-retangulo w-full h-24 mt-8"></div>
 
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
-        <div className="w-80 self-start pb-4 absolute top-0 md:hidden">
-          <img src="/assets/formaMobile.png" alt="forma" className="relative" />
-          <div className="z-10 absolute top-0 pl-6 pt-3">
-            <h1 className="text-white font-semibold text-2xl">
-              Bem-vindo(a) ao <br /> Desconecte Bem!
-            </h1>
-            <p className="text-white font-light">
-              Lhe acompanhando na <br /> jornada rumo a uma vida <br /> mais
-              balanceada.
-            </p>
-          </div>
-        </div>
-
+        <SectionMobile />
+        {/* finish */}
         <WhiteBox>
           <BoxTitle
             className="flex flex-col items-center md:items-center md:py-10"
@@ -67,19 +58,7 @@ export default function HomeCadastro() {
 
         {/* div apenas para mobile */}
 
-        <div className="flex self-end absolute -bottom-64 overflow-hidden md:hidden">
-          <img
-            src="/assets/logoDark.png"
-            alt="logo dark"
-            className="w-28 h-28 self-end"
-          />
-
-          <img
-            src="/assets/formaInferiorMobile.png"
-            alt="forma inferior"
-            className=""
-          />
-        </div>
+        <SectionInferiorMobile />
       </div>
     </div>
   );
