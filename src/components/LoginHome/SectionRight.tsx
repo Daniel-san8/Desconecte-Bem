@@ -25,6 +25,7 @@ export default function SectionRight() {
         <form
           className="flex flex-col gap-y-8 md:pt-10 md:px-9 md:gap-y-16"
           id="form-email"
+          method="post"
         >
           <div className="relative barra-horizontal">
             <InputLogin seletor="email" type="email" placeholder="E-mail" />
