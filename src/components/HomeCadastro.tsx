@@ -1,12 +1,34 @@
+import BoxTitle from "./LoginHome/BoxTitle";
+import ButtonLogin from "./LoginHome/ButtonLogin";
+import InputLogin from "./LoginHome/InputLogin";
 import Sectionleft from "./LoginHome/SectionLeft";
-import SectionRight from "./LoginHome/SectionRight";
+import WhiteBox from "./LoginHome/WhiteBox";
 
 export default function HomeCadastro() {
   return (
-    <div>
-      <SectionRight />
+    <div className="h-full bg-sectionRight font-Beiruti md:grid md:grid-cols-2 md:items-center">
       <Sectionleft />
-      <h1 className="text-5xl">meeeeeeeeeeu cadastro</h1>
+      <WhiteBox>
+        <BoxTitle
+          titulo="Cadastro"
+          pergunta="Por favor, insira seus dados abaixo."
+        />
+        <div className="relative barra-horizontal">
+          <InputLogin type="email" seletor="email" placeholder="E-mail" />
+        </div>
+        <div className="relative barra-horizontal">
+          <InputLogin type="Senha" seletor="Senha" placeholder="Senha" />
+        </div>
+        <div className="relative barra-horizontal">
+          <InputLogin
+            type="confirm"
+            seletor="confirm"
+            placeholder="Confirmar Senha"
+          />
+        </div>
+      </WhiteBox>
+
+      <ButtonLogin texto="Cadastrar-se" />
     </div>
   );
 }

@@ -27,20 +27,10 @@ export default function SectionRight() {
           id="form-email"
         >
           <div className="relative barra-horizontal">
-            <InputLogin
-              seletor="email"
-              type="email"
-              placeholder="E-mail"
-              className="outline-none md:placeholderMax w-full"
-            />
+            <InputLogin seletor="email" type="email" placeholder="E-mail" />
           </div>
           <div className="relative barra-horizontal ">
-            <InputLogin
-              type="password"
-              seletor="senha"
-              placeholder="Senha"
-              className="outline-none md:placeholderMax w-full"
-            />
+            <InputLogin type="password" seletor="senha" placeholder="Senha" />
           </div>
         </form>
         <a

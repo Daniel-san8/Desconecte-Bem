@@ -18,6 +18,7 @@ export default function InputLogin({
       name={seletor}
       id={seletor}
       placeholder={placeholder}
+      className="outline-none md:placeholderMax w-full"
       {...props}
     />
   );
