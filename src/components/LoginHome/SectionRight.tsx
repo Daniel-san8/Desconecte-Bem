@@ -1,10 +1,12 @@
 import ButtonLogin from "./ButtonLogin";
 import InputLogin from "./InputLogin";
+import BoxTitle from "./BoxTitle";
+import WhiteBox from "./WhiteBox";
 
 export default function SectionRight() {
   return (
     <section className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full ">
-      <div className="p-6 bg-white rounded-3xl w-72 h-72 flex flex-col md:w-80 md:h-96 md:p-0 md:mt-6 lg:w-96 ">
+      <WhiteBox>
         <div className="md:flex md:items-center">
           <img
             src="/assets/logoDark.png"
@@ -13,17 +15,11 @@ export default function SectionRight() {
             className="hidden md:block"
           />
 
-          <div className="pb-7 md:pb-0 flex flex-col items-center md:items-start">
-            <h1 className="text-4xl text-center font-semibold md:text-5xl md:text-start">
-              Entrar
-            </h1>
-            <p>
-              Não tem uma conta?{" "}
-              <a href="" className="text-cadastrar cursor-pointer">
-                Cadastrar-se.
-              </a>
-            </p>
-          </div>
+          <BoxTitle
+            titulo="Entrar"
+            pergunta="Não tem uma conta?"
+            extra="Cadastrar-se"
+          />
         </div>
 
         <form
@@ -53,7 +49,7 @@ export default function SectionRight() {
         >
           Esqueci minha senha
         </a>
-      </div>
+      </WhiteBox>
       <ButtonLogin texto="Entrar" idForm="form-email" />
     </section>
   );
