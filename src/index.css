@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  body {
+    background-color: rgba(246, 238, 219, 1);
+  }
+
   .barra-horizontal::after {
     content: "";
     position: absolute;

@@ -14,8 +14,12 @@ export default function HomeCadastro() {
     <div className="h-full bg-sectionRight font-Beiruti md:grid md:grid-cols-2 md:items-center">
       <Sectionleft />
 
+      {/* div apenas para mobile */}
+
+      <div className="bg-retangulo w-full h-24 mt-8"></div>
+
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
-        <div className="w-72 self-start pb-4 md:hidden">
+        <div className="w-80 self-start pb-4 absolute top-0 md:hidden">
           <img src="/assets/formaMobile.png" alt="forma" className="relative" />
           <div className="z-10 absolute top-0 pl-6 pt-3">
             <h1 className="text-white font-semibold text-2xl">
@@ -27,6 +31,7 @@ export default function HomeCadastro() {
             </p>
           </div>
         </div>
+
         <WhiteBox>
           <BoxTitle
             className="flex flex-col items-center md:items-center md:py-10"
@@ -59,6 +64,22 @@ export default function HomeCadastro() {
           texto="Cadastrar-se"
           idForm="cadastroForm"
         />
+
+        {/* div apenas para mobile */}
+
+        <div className="flex self-end absolute -bottom-64 overflow-hidden md:hidden">
+          <img
+            src="/assets/logoDark.png"
+            alt="logo dark"
+            className="w-28 h-28 self-end"
+          />
+
+          <img
+            src="/assets/formaInferiorMobile.png"
+            alt="forma inferior"
+            className=""
+          />
+        </div>
       </div>
     </div>
   );
