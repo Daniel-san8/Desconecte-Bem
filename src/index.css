@@ -27,4 +27,18 @@
   .boxShadowButtonTop {
     box-shadow: -2px 0 rgba(143, 160, 108, 1);
   }
+
+  .afterEmail::after {
+    content: "Insira um e-mail ativo.";
+    position: absolute;
+    font-size: 0.8rem;
+    padding-top: 2px;
+  }
+
+  .afterConfirmarSenha::after {
+    content: "*Por motivos de segurança, pedimos que digite sua senha novamente para se certificar dela.";
+    position: absolute;
+    font-size: 0.8rem;
+    padding-top: 2px;
+  }
 }

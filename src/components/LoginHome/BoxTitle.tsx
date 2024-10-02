@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type BoxTitleProps = {
   titulo: string;
   extra?: string;
@@ -12,9 +14,9 @@ export default function BoxTitle({ titulo, extra, pergunta }: BoxTitleProps) {
       </h1>
       <p>
         {pergunta}{" "}
-        <a href="" className="text-cadastrar cursor-pointer">
+        <Link to="/cadastro" className="text-cadastrar cursor-pointer">
           {extra}
-        </a>
+        </Link>
       </p>
     </div>
   );

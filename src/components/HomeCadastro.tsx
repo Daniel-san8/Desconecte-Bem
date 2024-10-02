@@ -15,22 +15,29 @@ export default function HomeCadastro() {
             titulo="Cadastro"
             pergunta="Por favor, insira seus dados abaixo."
           />
-          <div className="relative barra-horizontal">
-            <InputLogin type="email" seletor="email" placeholder="E-mail" />
-          </div>
-          <div className="relative barra-horizontal">
-            <InputLogin type="Senha" seletor="Senha" placeholder="Senha" />
-          </div>
-          <div className="relative barra-horizontal">
-            <InputLogin
-              type="confirm"
-              seletor="confirm"
-              placeholder="Confirmar Senha"
-            />
-          </div>
+          <form
+            action=""
+            className="flex flex-col gap-y-6"
+            id="cadastroForm"
+            method="post"
+          >
+            <div className="relative barra-horizontal afterEmail">
+              <InputLogin type="email" seletor="email" placeholder="E-mail" />
+            </div>
+            <div className="relative barra-horizontal">
+              <InputLogin type="Senha" seletor="Senha" placeholder="Senha" />
+            </div>
+            <div className="relative barra-horizontal afterConfirmarSenha">
+              <InputLogin
+                type="confirm"
+                seletor="confirm"
+                placeholder="Confirmar Senha"
+              />
+            </div>
+          </form>
         </WhiteBox>
 
-        <ButtonLogin texto="Cadastrar-se" />
+        <ButtonLogin texto="Cadastrar-se" idForm="cadastroForm" />
       </div>
     </div>
   );
