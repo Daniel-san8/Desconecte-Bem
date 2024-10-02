@@ -15,12 +15,21 @@ export default function HomeCadastro() {
       <Sectionleft />
 
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
-        <div className="hidden">
-          <img src="/assets/formaMobile.png" alt="forma" />
+        <div className="w-72 self-start pb-4 md:hidden">
+          <img src="/assets/formaMobile.png" alt="forma" className="relative" />
+          <div className="z-10 absolute top-0 pl-6 pt-3">
+            <h1 className="text-white font-semibold text-2xl">
+              Bem-vindo(a) ao <br /> Desconecte Bem!
+            </h1>
+            <p className="text-white font-light">
+              Lhe acompanhando na <br /> jornada rumo a uma vida <br /> mais
+              balanceada.
+            </p>
+          </div>
         </div>
         <WhiteBox>
           <BoxTitle
-            className="pb-7 flex flex-col items-center md:items-center md:py-10"
+            className="flex flex-col items-center md:items-center md:py-10"
             titulo="Cadastro"
             pergunta="Por favor, insira seus dados abaixo."
           />
