@@ -13,6 +13,7 @@ export default function SectionRight() {
             alt="logo-entrar"
             width="138px"
             className="hidden md:block"
+            draggable="false"
           />
 
           <BoxTitle

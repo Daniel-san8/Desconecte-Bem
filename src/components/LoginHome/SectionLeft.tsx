@@ -16,12 +16,14 @@ export default function Sectionleft() {
           src="/assets/imageSectionLeft.png"
           alt="image-section"
           className="md:w-3/4 md:h-3/4 md:self-end lg:w-3/4"
+          draggable="false"
         />
 
         <img
           src="/assets/logoLight.png"
           alt="logo"
           className=" md:h-36 md:self-end md:pb-8 lg:h-44"
+          draggable="false"
         />
       </div>
     </section>

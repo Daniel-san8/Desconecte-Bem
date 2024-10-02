@@ -15,7 +15,7 @@ export default function HomeCadastro() {
       <Sectionleft />
 
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
-        <div>
+        <div className="hidden">
           <img src="/assets/formaMobile.png" alt="forma" />
         </div>
         <WhiteBox>
@@ -25,7 +25,6 @@ export default function HomeCadastro() {
             pergunta="Por favor, insira seus dados abaixo."
           />
           <form
-            action=""
             className="flex flex-col gap-y-4 md:gap-y-8 md:px-9"
             id="cadastroForm"
             method="post"
