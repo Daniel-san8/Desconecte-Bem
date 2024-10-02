@@ -1,6 +1,6 @@
 export default function Sectionleft() {
   return (
-    <section className="hidden bg-sectionLeft md:h-full md:flex md:flex-col ">
+    <section className="hidden bg-sectionLeft h-full md:flex md:flex-col ">
       <div className="md:px-16 md:pt-20 lg:pt-40">
         <h1 className="font-semibold text-white md:text-5xl ">
           Bem vindo(a) ao Desconecte Bem!
@@ -11,7 +11,7 @@ export default function Sectionleft() {
         Lhe acompanhando na jornada rumo a uma vida mais balanceada.
       </p>
 
-      <div className="md:flex md:w-full md:flex-1">
+      <div className="h-screen md:flex md:w-full">
         <img
           src="/assets/imageSectionLeft.png"
           alt="image-section"

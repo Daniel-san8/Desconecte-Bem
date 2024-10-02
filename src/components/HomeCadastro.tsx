@@ -16,11 +16,10 @@ export default function HomeCadastro() {
     <div className="h-full bg-sectionRight font-Beiruti md:grid md:grid-cols-2 md:items-center">
       <Sectionleft />
 
-      {/* div apenas para mobile */}
-
-      <div className="bg-retangulo w-full h-24 mt-8"></div>
+      <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
 
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
+        {/* div apenas para mobile */}
         <SectionMobile />
         {/* finish */}
         <WhiteBox>
