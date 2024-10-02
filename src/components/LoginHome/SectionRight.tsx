@@ -19,9 +19,9 @@ export default function SectionRight() {
             </h1>
             <p>
               Não tem uma conta?{" "}
-              <span className="text-cadastrar cursor-pointer">
+              <a href="" className="text-cadastrar cursor-pointer">
                 Cadastrar-se.
-              </span>
+              </a>
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function SectionRight() {
           Esqueci minha senha
         </a>
       </div>
-      <ButtonLogin texto="Entrar" />
+      <ButtonLogin texto="Entrar" idForm="form-email" />
     </section>
   );
 }

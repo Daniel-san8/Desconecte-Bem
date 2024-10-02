@@ -1,11 +1,15 @@
-import Sectionleft from "./components/LoginHome/SectionLeft";
-import SectionRight from "./components/LoginHome/SectionRight";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import HomeLogin from "./components/HomeLogin";
+import HomeCadastro from "./components/HomeCadastro";
 
 export default function App() {
   return (
-    <div className=" h-screen font-Beiruti md:grid md:grid-cols-2 md:items-center">
-      <Sectionleft />
-      <SectionRight />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeLogin />} />
+        <Route path="cadastro" element={<HomeCadastro />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
