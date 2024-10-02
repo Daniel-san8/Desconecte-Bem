@@ -12,12 +12,13 @@ export default function HomeCadastro() {
       <div className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
         <WhiteBox>
           <BoxTitle
+            className="pb-7 flex flex-col items-center md:items-center md:py-10"
             titulo="Cadastro"
             pergunta="Por favor, insira seus dados abaixo."
           />
           <form
             action=""
-            className="flex flex-col gap-y-6"
+            className="flex flex-col gap-y-8 md:px-9"
             id="cadastroForm"
             method="post"
           >

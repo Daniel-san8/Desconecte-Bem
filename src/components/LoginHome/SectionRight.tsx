@@ -16,6 +16,7 @@ export default function SectionRight() {
           />
 
           <BoxTitle
+            className="pb-7 md:pb-0 flex flex-col items-center md:items-start"
             titulo="Entrar"
             pergunta="Não tem uma conta?"
             extra="Cadastrar-se"
