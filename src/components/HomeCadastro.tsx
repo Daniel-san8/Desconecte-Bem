@@ -37,11 +37,11 @@ export default function HomeCadastro() {
               <InputLogin type="email" seletor="email" placeholder="E-mail" />
             </div>
             <div className="relative barra-horizontal">
-              <InputLogin type="Senha" seletor="Senha" placeholder="Senha" />
+              <InputLogin type="password" seletor="Senha" placeholder="Senha" />
             </div>
             <div className="relative barra-horizontal afterConfirmarSenha">
               <InputLogin
-                type="confirm"
+                type="password"
                 seletor="confirm"
                 placeholder="Confirmar Senha"
               />
