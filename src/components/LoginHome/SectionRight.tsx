@@ -2,10 +2,16 @@ import ButtonLogin from "./ButtonLogin";
 import InputLogin from "./InputLogin";
 import BoxTitle from "./BoxTitle";
 import WhiteBox from "./WhiteBox";
+import SectionMobile from "../CadastroHome/SectionMobile";
+import SectionInferiorMobile from "../CadastroHome/SectionInferiorMobile";
 
 export default function SectionRight() {
   return (
-    <section className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full ">
+    <section className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
+      <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
+
+      <SectionMobile />
+
       <WhiteBox>
         <div className="md:flex md:items-center">
           <img
@@ -48,6 +54,8 @@ export default function SectionRight() {
         texto="Entrar"
         idForm="form-email"
       />
+
+      <SectionInferiorMobile />
     </section>
   );
 }

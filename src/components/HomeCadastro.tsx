@@ -24,7 +24,7 @@ export default function HomeCadastro() {
         {/* finish */}
         <WhiteBox>
           <BoxTitle
-            className="flex flex-col items-center md:items-center md:py-10"
+            className="flex flex-col items-center py-4 md:items-center md:py-10"
             titulo="Cadastro"
             pergunta="Por favor, insira seus dados abaixo."
           />
