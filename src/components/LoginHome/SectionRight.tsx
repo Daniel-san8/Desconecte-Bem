@@ -7,12 +7,12 @@ import SectionInferiorMobile from "../CadastroHome/SectionInferiorMobile";
 
 export default function SectionRight() {
   return (
-    <section className="h-screen bg-sectionRight flex flex-col justify-center items-center md:h-full">
-      <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
+    <section className="h-screen flex flex-col justify-center items-center md:h-full">
+      <div className="bg-retangulo absolute top-1 w-full h-24 mt-8 md:hidden"></div>
 
       <SectionMobile />
 
-      <WhiteBox>
+      <WhiteBox espacamento="mt-80">
         <div className="md:flex md:items-center">
           <img
             src="/assets/logoDark.png"
@@ -36,7 +36,12 @@ export default function SectionRight() {
           method="post"
         >
           <div className="relative barra-horizontal">
-            <InputLogin seletor="email" type="email" placeholder="E-mail" />
+            <InputLogin
+              seletor="email"
+              type="email"
+              placeholder="E-mail"
+              autoComplete="email"
+            />
           </div>
           <div className="relative barra-horizontal ">
             <InputLogin type="password" seletor="senha" placeholder="Senha" />

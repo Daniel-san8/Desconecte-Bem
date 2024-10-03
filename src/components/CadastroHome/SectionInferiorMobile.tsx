@@ -10,7 +10,7 @@ export default function SectionInferiorMobile() {
       <img
         src="/assets/formaInferiorMobile.png"
         alt="forma inferior"
-        className="w-full"
+        className="w-full h-2/3 self-end"
       />
     </div>
   );

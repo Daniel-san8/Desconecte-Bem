@@ -22,7 +22,7 @@ export default function HomeCadastro() {
         {/* div apenas para mobile */}
         <SectionMobile />
         {/* finish */}
-        <WhiteBox>
+        <WhiteBox espacamento="mt-12">
           <BoxTitle
             className="flex flex-col items-center py-4 md:items-center md:py-10"
             titulo="Cadastro"
