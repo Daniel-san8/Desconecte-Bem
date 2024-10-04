@@ -4,6 +4,7 @@ import BoxTitle from "./BoxTitle";
 import WhiteBox from "./WhiteBox";
 import SectionMobile from "../CadastroHome/SectionMobile";
 import SectionInferiorMobile from "../CadastroHome/SectionInferiorMobile";
+import { Link } from "react-router-dom";
 
 export default function SectionRight() {
   return (
@@ -47,12 +48,12 @@ export default function SectionRight() {
             <InputLogin type="password" seletor="senha" placeholder="Senha" />
           </div>
         </form>
-        <a
-          href=""
+        <Link
+          to="esqueci-senha"
           className="self-center underline pt-7 md:self-center md:pt-10"
         >
           Esqueci minha senha
-        </a>
+        </Link>
       </WhiteBox>
       <ButtonLogin
         className="text-white font-semibold bg-botaoLogin text-3xl px-12 py-2 md:text-4xl md:py-4 md:px-20 rounded-l-full rounded-br-full boxShadowButton"
