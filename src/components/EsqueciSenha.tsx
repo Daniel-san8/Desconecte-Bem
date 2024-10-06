@@ -4,6 +4,7 @@ import SectionInferiorMobile from "./CadastroHome/SectionInferiorMobile";
 import BoxHome from "./EsqueciSenha/BoxHome";
 import { useGlobal } from "../globalStates/globalUse";
 import StepTwo from "./EsqueciSenha/StepTwo";
+import Sectionleft from "./LoginHome/SectionLeft";
 
 export default function EsqueciSenha() {
   const global = useGlobal();
@@ -13,7 +14,8 @@ export default function EsqueciSenha() {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center">
+    <section className="relative flex flex-col items-center md:flex-row md:justify-center">
+      <Sectionleft />
       <SectionMobile />
       {step.stepOne && <BoxHome />}
       {step.stepTwo && <StepTwo />}
