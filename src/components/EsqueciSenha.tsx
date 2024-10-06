@@ -6,6 +6,7 @@ import { useGlobal } from "../globalStates/globalUse";
 import StepTwo from "./EsqueciSenha/StepTwo";
 import Sectionleft from "./LoginHome/SectionLeft";
 import StepThree from "./EsqueciSenha/StepThree";
+import StepFour from "./EsqueciSenha/StepFour";
 
 export default function EsqueciSenha() {
   const global = useGlobal();
@@ -21,7 +22,7 @@ export default function EsqueciSenha() {
       {step.stepOne && <BoxHome />}
       {step.stepTwo && <StepTwo />}
       {step.stepThree && <StepThree />}
-
+      {step.stepFour && <StepFour />}
       <SectionInferiorMobile />
     </section>
   );
