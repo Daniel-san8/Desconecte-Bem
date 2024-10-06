@@ -7,7 +7,7 @@ import { useGlobal } from "../../globalStates/globalUse";
 
 export default function BoxHome() {
   const global = useGlobal();
-  const advanceSteps = global.advanceSteps;
+  console.log(global.step);
 
   return (
     <>
@@ -31,9 +31,8 @@ export default function BoxHome() {
       </WhiteBox>
 
       <ButtonLogin
-        functionButton={advanceSteps}
+        functionButton={global.nextStep}
         texto="Confirmar"
-        idForm="esqueci-senha-form"
         className="text-white font-semibold bg-botaoLogin text-2xl px-8 py-2 rounded-full boxShadowButton md:text-3xl lg:rounded-none lg:rounded-l-full lg:rounded-br-full lg:px-10"
       />
     </>

@@ -8,12 +8,12 @@ type TypeEstadoEsqueciSenha = {
 };
 
 interface IGlobalProvider {
-  estadoEsqueciSenha: TypeEstadoEsqueciSenha;
-  setEstadoEsqueciSenha: React.Dispatch<
-    React.SetStateAction<TypeEstadoEsqueciSenha>
-  >;
-  advanceSteps: () => void;
+  dispatchStep: React.Dispatch<Action>;
+  step: TypeEstadoEsqueciSenha;
+  nextStep: () => void;
+  resetStep: () => void;
 }
+type Action = { type: "next" } | { type: "previous" };
 
 export const global = React.createContext<IGlobalProvider | null>(null);
 
@@ -26,20 +26,90 @@ export const useGlobal = () => {
 };
 
 export function GlobalProvider({ children }: PropsWithChildren) {
-  const [estadoEsqueciSenha, setEstadoEsqueciSenha] =
-    React.useState<TypeEstadoEsqueciSenha>({
-      stepOne: true,
-      stepTwo: false,
-      stepThree: false,
-      stepFour: false,
-    });
+  const stepObj: TypeEstadoEsqueciSenha = {
+    stepOne: true,
+    stepTwo: false,
+    stepThree: false,
+    stepFour: false,
+  };
 
-  function advanceSteps() {}
+  const [step, dispatchStep] = React.useReducer<
+    React.Reducer<TypeEstadoEsqueciSenha, Action>
+  >(advanceSteps, stepObj);
+
+  function advanceSteps(
+    state: TypeEstadoEsqueciSenha,
+    action: Action
+  ): TypeEstadoEsqueciSenha {
+    switch (action.type) {
+      case "next":
+        if (state.stepOne) {
+          return {
+            stepOne: false,
+            stepTwo: true,
+            stepThree: false,
+            stepFour: false,
+          };
+        }
+
+        if (state.stepTwo) {
+          return {
+            stepOne: false,
+            stepTwo: false,
+            stepThree: true,
+            stepFour: false,
+          };
+        }
+        if (state.stepThree) {
+          return {
+            stepOne: false,
+            stepTwo: false,
+            stepThree: false,
+            stepFour: true,
+          };
+        }
+        return stepObj;
+      case "previous":
+        if (state.stepFour) {
+          return {
+            stepOne: false,
+            stepTwo: false,
+            stepThree: true,
+            stepFour: false,
+          };
+        }
+        if (state.stepThree) {
+          return {
+            stepOne: false,
+            stepTwo: true,
+            stepThree: false,
+            stepFour: false,
+          };
+        }
+        if (state.stepTwo) {
+          return {
+            stepOne: true,
+            stepTwo: false,
+            stepThree: false,
+            stepFour: false,
+          };
+        }
+        return state;
+      default:
+        return stepObj;
+    }
+  }
+
+  const nextStep = () => {
+    dispatchStep({ type: "next" });
+  };
+
+  const resetStep = () => {
+    dispatchStep({ type: "previous" });
+  };
 
   return (
-    <global.Provider
-      value={{ estadoEsqueciSenha, setEstadoEsqueciSenha, advanceSteps }}
-    >
+    <global.Provider value={{ step, nextStep, resetStep, dispatchStep }}>
       {children}
     </global.Provider>
   );
