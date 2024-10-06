@@ -23,7 +23,6 @@ export default function BoxHome() {
               seletor="email-esqueci-senha"
               placeholder="E-mail"
               type="email"
-              className="mt-5"
             />
           </div>
         </form>
