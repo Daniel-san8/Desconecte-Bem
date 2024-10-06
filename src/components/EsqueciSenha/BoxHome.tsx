@@ -7,7 +7,6 @@ import { useGlobal } from "../../globalStates/globalUse";
 
 export default function BoxHome() {
   const global = useGlobal();
-  console.log(global.step);
 
   return (
     <>
@@ -18,7 +17,7 @@ export default function BoxHome() {
           titulo="Esqueci minha senha"
           pergunta="Por favor, insira abaixo o e-mail com o qual vinculou sua conta para que possamos ajudá-lo(a) a recuperá-la."
         />
-        <form action="" id="esqueci-senha-form">
+        <form action="" method="post" id="esqueci-senha-form">
           <div className="relative barra-horizontal">
             <InputLogin
               seletor="email-esqueci-senha"

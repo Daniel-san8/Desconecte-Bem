@@ -6,6 +6,7 @@ import { useGlobal } from "../globalStates/globalUse";
 
 export default function EsqueciSenha() {
   const global = useGlobal();
+  const { step } = global;
   React.useEffect(() => {
     document.title = "Esqueci a Senha | Desconecte Bem";
   }, []);
@@ -13,7 +14,8 @@ export default function EsqueciSenha() {
   return (
     <section className="relative flex flex-col items-center">
       <SectionMobile />
-      {<BoxHome />}
+      {step.stepOne && <BoxHome />}
+
       <SectionInferiorMobile />
     </section>
   );

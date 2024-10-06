@@ -13,6 +13,7 @@ interface IGlobalProvider {
   nextStep: () => void;
   resetStep: () => void;
 }
+
 type Action = { type: "next" } | { type: "previous" };
 
 export const global = React.createContext<IGlobalProvider | null>(null);
