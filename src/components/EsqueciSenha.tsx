@@ -1,9 +1,18 @@
 import React from "react";
+import SectionMobile from "./CadastroHome/SectionMobile";
+import SectionInferiorMobile from "./CadastroHome/SectionInferiorMobile";
 
 export default function EsqueciSenha() {
   React.useEffect(() => {
     document.title = "Esqueci a Senha | Desconecte Bem";
   }, []);
 
-  return <h1>Esqueci a senha</h1>;
+  return (
+    <section>
+      <SectionMobile />
+      <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
+
+      <SectionInferiorMobile />
+    </section>
+  );
 }
