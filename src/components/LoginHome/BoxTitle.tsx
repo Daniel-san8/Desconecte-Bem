@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 type BoxTitleProps = HTMLDivElement & {
-  titulo: string;
+  titulo?: string;
   extra?: string;
   pergunta: string;
 };

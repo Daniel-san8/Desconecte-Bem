@@ -1,7 +1,6 @@
 import React, { PropsWithChildren } from "react";
 
 interface IGlobalProvider {
-  dispatchStep: React.Dispatch<Action>;
   step: TypeEstadoEsqueciSenha;
   nextStep: () => void;
   resetStep: () => void;
@@ -71,32 +70,6 @@ export function GlobalProvider({ children }: PropsWithChildren) {
         }
         return stepObj;
       case "previous":
-        if (state.stepFour) {
-          return {
-            stepOne: false,
-            stepTwo: false,
-            stepThree: true,
-            stepFour: false,
-          };
-        }
-        if (state.stepThree) {
-          return {
-            stepOne: false,
-            stepTwo: true,
-            stepThree: false,
-            stepFour: false,
-          };
-        }
-        if (state.stepTwo) {
-          return {
-            stepOne: true,
-            stepTwo: false,
-            stepThree: false,
-            stepFour: false,
-          };
-        }
-        return state;
-      default:
         return stepObj;
     }
   }
@@ -110,7 +83,7 @@ export function GlobalProvider({ children }: PropsWithChildren) {
   };
 
   return (
-    <global.Provider value={{ step, nextStep, resetStep, dispatchStep }}>
+    <global.Provider value={{ step, nextStep, resetStep }}>
       {children}
     </global.Provider>
   );

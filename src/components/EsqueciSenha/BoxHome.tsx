@@ -13,12 +13,18 @@ export default function BoxHome() {
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
 
       <WhiteBox espacamento="mt-28">
+        <div>
+          <h1 className="text-2xl text-center font-semibold mt-6 mb-4 md:text-4xl md:text-start">
+            Esqueci minha senha
+          </h1>
+        </div>
         <BoxTitle
-          titulo="Esqueci minha senha"
+          className="text-sm text-center mb-6"
           pergunta="Por favor, insira abaixo o e-mail com o qual vinculou sua conta para que possamos ajudá-lo(a) a recuperá-la."
         />
+
         <form action="" method="post" id="esqueci-senha-form">
-          <div className="relative barra-horizontal">
+          <div className="relative barra-horizontal stepOneAfter">
             <InputLogin
               seletor="email-esqueci-senha"
               placeholder="E-mail"

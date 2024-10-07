@@ -43,4 +43,10 @@
     position: absolute;
     font-size: 0.8rem;
   }
+
+  .stepOneAfter::after {
+    content: "Você vai precisar ter acesso ao endereço de e-mail para concluir o processo.";
+    position: absolute;
+    font-size: 0.8rem;
+  }
 }

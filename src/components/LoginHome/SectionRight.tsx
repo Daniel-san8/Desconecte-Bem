@@ -45,7 +45,12 @@ export default function SectionRight() {
             />
           </div>
           <div className="relative barra-horizontal ">
-            <InputLogin type="password" seletor="senha" placeholder="Senha" />
+            <InputLogin
+              type="password"
+              seletor="senha"
+              placeholder="Senha"
+              autoComplete="current-password"
+            />
           </div>
         </form>
         <Link
