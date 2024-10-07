@@ -49,4 +49,9 @@
     position: absolute;
     font-size: 0.8rem;
   }
+  .stepTwoAfter::after {
+    content: "*Caso não o tenha recebido, verifique a caixa de spam.";
+    position: absolute;
+    font-size: 0.8rem;
+  }
 }

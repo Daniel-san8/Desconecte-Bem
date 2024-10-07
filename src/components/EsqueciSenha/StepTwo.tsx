@@ -15,13 +15,18 @@ export default function StepTwo() {
     <>
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
       <WhiteBox espacamento="mt-28">
+        <div>
+          <h1 className="text-2xl text-center font-semibold mt-6 mb-4 md:text-4xl md:text-start">
+            Verifique seu E-mail
+          </h1>
+        </div>
         <BoxTitle
-          titulo="Verifique seu E-mail"
+          className="text-sm text-center mb-2"
           pergunta={`Por favor, insira abaixo o código de 4 dígitos enviado para o endereço de e-mail ${emailUser}.`}
         />
 
         <form action="" method="post" id="esqueci-senha-form">
-          <div className="relative barra-horizontal mt-4">
+          <div className="relative barra-horizontal mt-2 stepTwoAfter">
             <InputLogin
               seletor="email-esqueci-senha"
               placeholder="Código"
@@ -32,7 +37,7 @@ export default function StepTwo() {
 
         <a
           href=""
-          className="self-center underline pt-7 md:self-center md:pt-10"
+          className="self-center underline text-sm pt-12 md:self-center md:pt-10"
         >
           Reenviar Código
         </a>
