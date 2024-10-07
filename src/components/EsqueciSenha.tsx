@@ -15,6 +15,12 @@ export default function EsqueciSenha() {
     document.title = "Esqueci a Senha | Desconecte Bem";
   }, []);
 
+  React.useEffect(() => {
+    global.resetStep();
+
+    return () => global.resetStep();
+  }, []);
+
   return (
     <section className="relative flex flex-col items-center md:flex-row md:justify-center">
       <Sectionleft />

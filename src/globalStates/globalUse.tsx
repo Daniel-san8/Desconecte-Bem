@@ -1,12 +1,5 @@
 import React, { PropsWithChildren } from "react";
 
-type TypeEstadoEsqueciSenha = {
-  stepOne: boolean;
-  stepTwo: boolean;
-  stepThree: boolean;
-  stepFour: boolean;
-};
-
 interface IGlobalProvider {
   dispatchStep: React.Dispatch<Action>;
   step: TypeEstadoEsqueciSenha;
@@ -15,6 +8,13 @@ interface IGlobalProvider {
 }
 
 type Action = { type: "next" } | { type: "previous" };
+
+type TypeEstadoEsqueciSenha = {
+  stepOne: boolean;
+  stepTwo: boolean;
+  stepThree: boolean;
+  stepFour: boolean;
+};
 
 export const global = React.createContext<IGlobalProvider | null>(null);
 

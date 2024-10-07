@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { useGlobal } from "../../globalStates/globalUse";
 import BoxTitle from "../LoginHome/BoxTitle";
 import ButtonLogin from "../LoginHome/ButtonLogin";
-import InputLogin from "../LoginHome/InputLogin";
 import WhiteBox from "../LoginHome/WhiteBox";
 
 export default function StepFour() {
