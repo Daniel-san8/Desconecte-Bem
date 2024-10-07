@@ -10,12 +10,22 @@ export default function StepThree() {
     <>
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
       <WhiteBox espacamento="mt-28">
+        <div>
+          <h1 className="text-2xl text-center font-semibold my-2 md:text-4xl md:text-start">
+            Crie uma Nova Senha
+          </h1>
+        </div>
         <BoxTitle
-          titulo="Crie uma Nova Senha"
+          className="text-sm text-center mb-2"
           pergunta="Lembre-se de que sua nova senha precisa ser diferente daquela estabelecida anteriormente."
         />
 
-        <form action="" method="post" id="esqueci-senha-form">
+        <form
+          action=""
+          method="post"
+          id="esqueci-senha-form"
+          className="flex flex-col gap-y-1"
+        >
           <div className="relative barra-horizontal mt-4">
             <InputLogin
               seletor="email-esqueci-senha"
@@ -23,7 +33,7 @@ export default function StepThree() {
               type="password"
             />
           </div>
-          <div className="relative barra-horizontal mt-4">
+          <div className="relative barra-horizontal mt-4 stepThreeAfter">
             <InputLogin
               seletor="email-esqueci-senha-confirm"
               placeholder="Confirme sua nova senha"
