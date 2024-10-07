@@ -49,6 +49,44 @@
     position: absolute;
     font-size: 0.8rem;
   }
+
+  @media (min-width: 768px) {
+    .stepOneAfter::after {
+      width: 80%;
+      left: 10.5%;
+    }
+    .stepTwoAfter::after {
+      width: 80%;
+      left: 10.5%;
+    }
+    .stepThreeAfter::after {
+      width: 80%;
+      left: 10.5%;
+    }
+    .stepFourAfter::after {
+      width: 80%;
+      left: 10.5%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .stepOneAfter::after {
+      width: 85%;
+      left: 8.5%;
+    }
+    .stepTwoAfter::after {
+      width: 90%;
+      left: 8.5%;
+    }
+    .stepThreeAfter::after {
+      width: 90%;
+      left: 8.5%;
+    }
+    .stepFourAfter::after {
+      width: 90%;
+      left: 8.5%;
+    }
+  }
   .stepTwoAfter::after {
     content: "*Caso não o tenha recebido, verifique a caixa de spam.";
     position: absolute;

@@ -22,7 +22,7 @@ export default function EsqueciSenha() {
   }, []);
 
   return (
-    <section className="relative flex flex-col items-center md:flex-row md:justify-center">
+    <section className="relative flex flex-col md:grid md:grid-cols-2 items-center md:flex-row md:justify-center">
       <Sectionleft />
       <SectionMobile />
       {step.stepOne && <BoxHome />}
