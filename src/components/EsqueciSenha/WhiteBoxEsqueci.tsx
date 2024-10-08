@@ -17,6 +17,8 @@ export default function WhiteBoxEsqueci({
       case "medium":
         setTamanho("h-60");
         break;
+
+      default:
     }
   }, []);
   return (

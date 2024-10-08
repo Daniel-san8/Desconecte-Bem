@@ -16,7 +16,7 @@ export default function StepTwo() {
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
       <WhiteBoxEsqueci size="small">
         <div>
-          <h1 className="text-3xl text-center font-semibold md:text-3xl">
+          <h1 className="text-3xl text-center font-semibold md:text-4xl md:mt-4">
             Verifique seu E-mail
           </h1>
         </div>
@@ -37,7 +37,7 @@ export default function StepTwo() {
 
         <a
           href=""
-          className="self-center underline text-sm pt-10 md:self-center md:pt-10"
+          className="self-center underline text-sm pt-10 md:self-center md:pt-14"
         >
           Reenviar Código
         </a>

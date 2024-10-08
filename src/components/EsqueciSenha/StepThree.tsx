@@ -6,12 +6,13 @@ import WhiteBoxEsqueci from "./WhiteBoxEsqueci";
 
 export default function StepThree() {
   const global = useGlobal();
+
   return (
     <section className="w-full  flex flex-col items-center">
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
       <WhiteBoxEsqueci>
         <div>
-          <h1 className="text-3xl text-center font-semibold md:text-3xl ">
+          <h1 className="text-3xl text-center font-semibold md:text-4xl md:mt-4">
             Crie uma Nova Senha
           </h1>
         </div>
@@ -26,7 +27,7 @@ export default function StepThree() {
           id="esqueci-senha-form"
           className="flex flex-col"
         >
-          <div className="relative barra-horizontal mt-4 md:px-8">
+          <div className="relative barra-horizontal mt-4 stepThreeAfterNone md:px-8 md:mt-2">
             <InputLogin
               seletor="email-esqueci-senha"
               placeholder="Nova Senha"

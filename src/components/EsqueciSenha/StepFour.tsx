@@ -3,6 +3,7 @@ import { useGlobal } from "../../globalStates/globalUse";
 import BoxTitle from "../LoginHome/BoxTitle";
 import ButtonLogin from "../LoginHome/ButtonLogin";
 import WhiteBoxEsqueci from "./WhiteBoxEsqueci";
+import React from "react";
 
 export default function StepFour() {
   const navigate = useNavigate();
@@ -15,12 +16,12 @@ export default function StepFour() {
   }
 
   return (
-    <section className="w-full  flex flex-col items-center">
+    <section className="w-full flex flex-col items-center">
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
 
       <WhiteBoxEsqueci size="small">
-        <div className="flex items-center md:px-8 ">
-          <h1 className="text-3xl text-center font-semibold my-4 md:text-3xl md:text-start">
+        <div className="flex items-center md:px-8 md:pt-6">
+          <h1 className="text-3xl text-center font-semibold my-4 md:text-4xl md:text-start">
             Senha alterada com sucesso!
           </h1>
           <div>

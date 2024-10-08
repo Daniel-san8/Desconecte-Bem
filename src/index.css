@@ -50,21 +50,41 @@
     font-size: 0.8rem;
   }
 
+  .stepTwoAfter::after {
+    content: "*Caso não o tenha recebido, verifique a caixa de spam.";
+    position: absolute;
+    font-size: 0.8rem;
+  }
+  .stepThreeAfter::after {
+    content: "*Por motivos de segurança, pedimos que digite sua nova senha novamente para se certificar dela.";
+    position: absolute;
+    font-size: 0.8rem;
+  }
+  .stepThreeAfterNone::after {
+    content: "";
+    position: absolute;
+  }
+
   @media (min-width: 768px) {
+    .stepThreeAfterNone::after {
+      width: 80%;
+      left: 10.5%;
+    }
+
     .stepOneAfter::after {
       width: 80%;
       left: 10.5%;
-      font-size: 0.6rem;
+      font-size: 1rem;
     }
     .stepTwoAfter::after {
       width: 80%;
       left: 10.5%;
-      font-size: 0.6rem;
+      font-size: 1rem;
     }
     .stepThreeAfter::after {
       width: 80%;
       left: 10.5%;
-      font-size: 0.6rem;
+      font-size: 0.8rem;
     }
     .stepFourAfter::after {
       width: 80%;
@@ -78,6 +98,10 @@
   }
 
   @media (min-width: 1024px) {
+    .barra-horizontal::after {
+      width: 100%;
+      left: 0%;
+    }
     .stepOneAfter::after {
       width: 85%;
       left: 8.5%;
@@ -94,15 +118,5 @@
       width: 90%;
       left: 8.5%;
     }
-  }
-  .stepTwoAfter::after {
-    content: "*Caso não o tenha recebido, verifique a caixa de spam.";
-    position: absolute;
-    font-size: 0.8rem;
-  }
-  .stepThreeAfter::after {
-    content: "*Por motivos de segurança, pedimos que digite sua nova senha novamente para se certificar dela.";
-    position: absolute;
-    font-size: 0.8rem;
   }
 }

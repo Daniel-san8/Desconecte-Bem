@@ -14,7 +14,7 @@ export default function BoxHome() {
 
       <WhiteBoxEsqueci size="small">
         <div>
-          <h1 className="text-3xl text-center font-semibold md:text-4xl ">
+          <h1 className="text-3xl text-center font-semibold md:text-4xl md:mt-4">
             Esqueci minha senha
           </h1>
         </div>
