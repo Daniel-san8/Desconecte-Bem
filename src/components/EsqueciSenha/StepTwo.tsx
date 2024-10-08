@@ -21,7 +21,7 @@ export default function StepTwo() {
           </h1>
         </div>
         <BoxTitle
-          className="text-base text-center mt-1 md:px-8"
+          className="text-base text-center mt-1 md:px-8 lg:py-2"
           pergunta={`Por favor, insira abaixo o código de 4 dígitos enviado para o endereço de e-mail ${emailUser}.`}
         />
 

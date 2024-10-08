@@ -98,6 +98,10 @@
   }
 
   @media (min-width: 1024px) {
+    .stepThreeAfterNone::after {
+      width: 90% !important;
+      left: 8.5% !important;
+    }
     .barra-horizontal::after {
       width: 100%;
       left: 0%;
@@ -115,6 +119,13 @@
       left: 8.5%;
     }
     .stepFourAfter::after {
+      width: 90%;
+      left: 8.5%;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .stepThreeAfterNone::after {
       width: 90%;
       left: 8.5%;
     }
