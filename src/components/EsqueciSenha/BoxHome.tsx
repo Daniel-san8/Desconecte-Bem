@@ -2,8 +2,8 @@ import React from "react";
 import BoxTitle from "../LoginHome/BoxTitle";
 import ButtonLogin from "../LoginHome/ButtonLogin";
 import InputLogin from "../LoginHome/InputLogin";
-import WhiteBox from "../LoginHome/WhiteBox";
 import { useGlobal } from "../../globalStates/globalUse";
+import WhiteBoxEsqueci from "./WhiteBoxEsqueci";
 
 export default function BoxHome() {
   const global = useGlobal();
@@ -12,7 +12,7 @@ export default function BoxHome() {
     <section className="w-full  flex flex-col items-center">
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
 
-      <WhiteBox espacamento="mt-28">
+      <WhiteBoxEsqueci>
         <div>
           <h1 className="text-2xl text-center font-semibold mt-6 mb-4 md:text-3xl ">
             Esqueci minha senha
@@ -32,7 +32,7 @@ export default function BoxHome() {
             />
           </div>
         </form>
-      </WhiteBox>
+      </WhiteBoxEsqueci>
 
       <ButtonLogin
         functionButton={global.nextStep}
