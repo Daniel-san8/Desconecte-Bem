@@ -16,12 +16,12 @@ export default function StepTwo() {
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
       <WhiteBoxEsqueci>
         <div>
-          <h1 className="text-2xl text-center font-semibold mt-6 mb-4 md:text-3xl">
+          <h1 className="text-2xl text-center font-semibold md:text-3xl">
             Verifique seu E-mail
           </h1>
         </div>
         <BoxTitle
-          className="text-sm text-center md:px-8"
+          className="text-sm text-center my-1 md:px-8"
           pergunta={`Por favor, insira abaixo o código de 4 dígitos enviado para o endereço de e-mail ${emailUser}.`}
         />
 

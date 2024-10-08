@@ -18,7 +18,7 @@ export default function StepFour() {
     <section className="w-full  flex flex-col items-center">
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
 
-      <WhiteBoxEsqueci>
+      <WhiteBoxEsqueci size="small">
         <div className="flex items-center md:px-8 ">
           <h1 className="text-2xl text-center font-semibold my-4 md:text-3xl md:text-start">
             Senha alterada com sucesso!

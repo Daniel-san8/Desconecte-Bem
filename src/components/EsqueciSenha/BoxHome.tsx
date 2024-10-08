@@ -12,14 +12,14 @@ export default function BoxHome() {
     <section className="w-full  flex flex-col items-center">
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
 
-      <WhiteBoxEsqueci>
+      <WhiteBoxEsqueci size="small">
         <div>
-          <h1 className="text-2xl text-center font-semibold mt-6 mb-4 md:text-3xl ">
+          <h1 className="text-2xl text-center font-semibold md:text-3xl ">
             Esqueci minha senha
           </h1>
         </div>
         <BoxTitle
-          className="text-sm text-center mb-6 md:px-8"
+          className="text-sm text-center my-3 md:px-8"
           pergunta="Por favor, insira abaixo o e-mail com o qual vinculou sua conta para que possamos ajudá-lo(a) a recuperá-la."
         />
 

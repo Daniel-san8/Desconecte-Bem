@@ -54,18 +54,26 @@
     .stepOneAfter::after {
       width: 80%;
       left: 10.5%;
+      font-size: 0.6rem;
     }
     .stepTwoAfter::after {
       width: 80%;
       left: 10.5%;
+      font-size: 0.6rem;
     }
     .stepThreeAfter::after {
       width: 80%;
       left: 10.5%;
+      font-size: 0.6rem;
     }
     .stepFourAfter::after {
       width: 80%;
       left: 10.5%;
+      font-size: 0.6rem;
+    }
+
+    .placeholderMax::placeholder {
+      font-size: 1.1rem;
     }
   }
 

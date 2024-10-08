@@ -11,7 +11,7 @@ export default function StepThree() {
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
       <WhiteBoxEsqueci>
         <div>
-          <h1 className="text-2xl text-center font-semibold my-2 md:text-3xl ">
+          <h1 className="text-2xl text-center font-semibold md:text-3xl ">
             Crie uma Nova Senha
           </h1>
         </div>
@@ -26,7 +26,7 @@ export default function StepThree() {
           id="esqueci-senha-form"
           className="flex flex-col gap-y-1"
         >
-          <div className="relative barra-horizontal mt-4 stepThreeAfter md:px-8">
+          <div className="relative barra-horizontal mt-4 md:px-8">
             <InputLogin
               seletor="email-esqueci-senha"
               placeholder="Nova Senha"
