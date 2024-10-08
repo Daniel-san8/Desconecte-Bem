@@ -12,21 +12,21 @@ export default function StepTwo() {
   );
   const emailUser = emailUserState ?? "[Inserir E-mail]";
   return (
-    <section className="w-full  flex flex-col items-center">
+    <section className="w-full flex flex-col items-center">
       <div className="bg-retangulo w-full h-24 mt-8 md:hidden"></div>
-      <WhiteBoxEsqueci>
+      <WhiteBoxEsqueci size="small">
         <div>
-          <h1 className="text-2xl text-center font-semibold md:text-3xl">
+          <h1 className="text-3xl text-center font-semibold md:text-3xl">
             Verifique seu E-mail
           </h1>
         </div>
         <BoxTitle
-          className="text-sm text-center my-1 md:px-8"
+          className="text-base text-center mt-1 md:px-8"
           pergunta={`Por favor, insira abaixo o código de 4 dígitos enviado para o endereço de e-mail ${emailUser}.`}
         />
 
         <form action="" method="post" id="esqueci-senha-form">
-          <div className="relative barra-horizontal mt-2 stepTwoAfter md:px-8">
+          <div className="relative barra-horizontal stepTwoAfter md:px-8">
             <InputLogin
               seletor="email-esqueci-senha"
               placeholder="Código"
@@ -37,7 +37,7 @@ export default function StepTwo() {
 
         <a
           href=""
-          className="self-center underline text-sm pt-12 md:self-center md:pt-10"
+          className="self-center underline text-sm pt-10 md:self-center md:pt-10"
         >
           Reenviar Código
         </a>

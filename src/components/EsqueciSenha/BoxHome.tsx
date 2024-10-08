@@ -14,12 +14,12 @@ export default function BoxHome() {
 
       <WhiteBoxEsqueci size="small">
         <div>
-          <h1 className="text-2xl text-center font-semibold md:text-3xl ">
+          <h1 className="text-3xl text-center font-semibold md:text-4xl ">
             Esqueci minha senha
           </h1>
         </div>
         <BoxTitle
-          className="text-sm text-center my-3 md:px-8"
+          className="text-base text-center my-3 md:px-8"
           pergunta="Por favor, insira abaixo o e-mail com o qual vinculou sua conta para que possamos ajudá-lo(a) a recuperá-la."
         />
 

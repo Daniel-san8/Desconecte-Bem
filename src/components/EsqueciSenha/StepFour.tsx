@@ -20,7 +20,7 @@ export default function StepFour() {
 
       <WhiteBoxEsqueci size="small">
         <div className="flex items-center md:px-8 ">
-          <h1 className="text-2xl text-center font-semibold my-4 md:text-3xl md:text-start">
+          <h1 className="text-3xl text-center font-semibold my-4 md:text-3xl md:text-start">
             Senha alterada com sucesso!
           </h1>
           <div>
@@ -28,7 +28,7 @@ export default function StepFour() {
           </div>
         </div>
         <BoxTitle
-          className="text-sm text-center mb-6 md:px-8"
+          className="text-base text-center mb-6 md:px-8"
           pergunta="Conseguimos vincular a nova senha à sua conta. Agora, você pode entrar com ela normalmente."
         />
       </WhiteBoxEsqueci>
