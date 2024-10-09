@@ -12,7 +12,10 @@ export default function ButtonLogin({
   functionButton,
 }: ButtonLoginProps) {
   return (
-    <div className="py-7 md:pt-14" onClick={functionButton}>
+    <div
+      className="my-7 hover:opacity-70 transition duration-300 ease-in-out md:mt-14"
+      onClick={functionButton}
+    >
       <button type="submit" form={idForm} className={className}>
         {texto}
       </button>
