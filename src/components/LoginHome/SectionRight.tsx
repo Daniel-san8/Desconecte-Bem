@@ -11,17 +11,21 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function SectionRight() {
   const schemaName = z.object({
-    name: z.string().email(),
-    password: z.string(),
+    name: z.string().email("Por favor, insira um e-mail válido"),
+    password: z.string().min(1, "A senha é obrigatória"),
   });
 
-  const { handleSubmit, register } = useForm<TFormName>({
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm<TFormName>({
     resolver: zodResolver(schemaName),
   });
 
   type TFormName = z.infer<typeof schemaName>;
 
-  function mostrarDados(data: any) {
+  function mostrarDados(data: TFormName) {
     console.log(data);
   }
 
@@ -53,7 +57,7 @@ export default function SectionRight() {
           className="flex flex-col gap-y-8 md:pt-10 md:px-9 md:gap-y-16"
           id="form-email"
           method="post"
-          onSubmit={handleSubmit(mostrarDados, mostrarDados)}
+          onSubmit={handleSubmit(mostrarDados)}
         >
           <div className="relative barra-horizontal">
             <InputLogin
@@ -62,6 +66,7 @@ export default function SectionRight() {
               autoComplete="email"
               {...register("name")}
             />
+            {errors.name?.message}
           </div>
           <div className="relative barra-horizontal ">
             <InputLogin
@@ -70,6 +75,7 @@ export default function SectionRight() {
               autoComplete="current-password"
               {...register("password")}
             />
+            {errors.password?.message}
           </div>
         </form>
         <Link
