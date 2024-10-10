@@ -6,8 +6,26 @@ import Sectionleft from "./LoginHome/SectionLeft";
 import WhiteBox from "./LoginHome/WhiteBox";
 import SectionMobile from "./CadastroHome/SectionMobile";
 import SectionInferiorMobile from "./CadastroHome/SectionInferiorMobile";
+import { z } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function HomeCadastro() {
+  const schemaCadastro = z.object({
+    email: z.string().email("Informe um email válido!"),
+    password: z.string().min(1, "Digite pelo menos 1 caractere"),
+    passwordConfirmed: z.string().min(1, "Digite pelo menos 1 caractere"),
+  });
+
+  type TschemaCadastro = z.infer<typeof schemaCadastro>;
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm<TschemaCadastro>({
+    resolver: zodResolver(schemaCadastro),
+  });
+
   React.useEffect(() => {
     document.title = "Cadastrar | Desconecte Bem";
   }, []);
@@ -34,17 +52,13 @@ export default function HomeCadastro() {
             method="post"
           >
             <div className="relative barra-horizontal afterEmail">
-              <InputLogin type="email" seletor="email" placeholder="E-mail" />
+              <InputLogin type="email" placeholder="E-mail" />
             </div>
             <div className="relative barra-horizontal">
-              <InputLogin type="password" seletor="Senha" placeholder="Senha" />
+              <InputLogin type="password" placeholder="Senha" />
             </div>
             <div className="relative barra-horizontal afterConfirmarSenha">
-              <InputLogin
-                type="password"
-                seletor="confirm"
-                placeholder="Confirmar Senha"
-              />
+              <InputLogin type="password" placeholder="Confirmar Senha" />
             </div>
           </form>
         </WhiteBox>
