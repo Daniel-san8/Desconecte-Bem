@@ -7,15 +7,23 @@ import SectionInferiorMobile from "../CadastroHome/SectionInferiorMobile";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function SectionRight() {
-  const { handleSubmit, register } = useForm<TFormName>();
   const schemaName = z.object({
     name: z.string().email(),
     password: z.string(),
   });
 
+  const { handleSubmit, register } = useForm<TFormName>({
+    resolver: zodResolver(schemaName),
+  });
+
   type TFormName = z.infer<typeof schemaName>;
+
+  function mostrarDados(data: any) {
+    console.log(data);
+  }
 
   return (
     <section className="h-screen flex flex-col justify-center items-center md:h-full">
@@ -45,21 +53,22 @@ export default function SectionRight() {
           className="flex flex-col gap-y-8 md:pt-10 md:px-9 md:gap-y-16"
           id="form-email"
           method="post"
+          onSubmit={handleSubmit(mostrarDados, mostrarDados)}
         >
           <div className="relative barra-horizontal">
             <InputLogin
-              seletor="email"
               type="email"
               placeholder="E-mail"
               autoComplete="email"
+              {...register("name")}
             />
           </div>
           <div className="relative barra-horizontal ">
             <InputLogin
               type="password"
-              seletor="senha"
               placeholder="Senha"
               autoComplete="current-password"
+              {...register("password")}
             />
           </div>
         </form>
