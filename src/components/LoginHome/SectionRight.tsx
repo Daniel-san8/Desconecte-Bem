@@ -6,9 +6,16 @@ import SectionMobile from "../CadastroHome/SectionMobile";
 import SectionInferiorMobile from "../CadastroHome/SectionInferiorMobile";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 export default function SectionRight() {
-  const { handleSubmit, register } = useForm();
+  const { handleSubmit, register } = useForm<TFormName>();
+  const schemaName = z.object({
+    name: z.string().email(),
+    password: z.string(),
+  });
+
+  type TFormName = z.infer<typeof schemaName>;
 
   return (
     <section className="h-screen flex flex-col justify-center items-center md:h-full">
