@@ -5,8 +5,11 @@ import WhiteBox from "./WhiteBox";
 import SectionMobile from "../CadastroHome/SectionMobile";
 import SectionInferiorMobile from "../CadastroHome/SectionInferiorMobile";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 export default function SectionRight() {
+  const { handleSubmit, register } = useForm();
+
   return (
     <section className="h-screen flex flex-col justify-center items-center md:h-full">
       <div className="bg-retangulo absolute top-1 w-full h-24 mt-8 md:hidden"></div>
