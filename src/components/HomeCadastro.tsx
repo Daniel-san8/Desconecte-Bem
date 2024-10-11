@@ -13,8 +13,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 export default function HomeCadastro() {
   const schemaCadastro = z.object({
     email: z.string().email("Informe um email válido!"),
-    password: z.string().min(1, "Digite pelo menos 1 caractere"),
-    passwordConfirmed: z.string().min(1, "Digite pelo menos 1 caractere"),
+    password: z.string().min(6, "Digite pelo menos 6 caracteres"),
+    passwordConfirmed: z.string().min(6, "Digite pelo menos 6 caracteres"),
   });
 
   type TschemaCadastro = z.infer<typeof schemaCadastro>;
@@ -50,15 +50,28 @@ export default function HomeCadastro() {
             className="flex flex-col gap-y-4 md:gap-y-8 md:px-9"
             id="cadastroForm"
             method="post"
+            onSubmit={handleSubmit((data) => console.log(data))}
           >
             <div className="relative barra-horizontal afterEmail">
-              <InputLogin type="email" placeholder="E-mail" />
+              <InputLogin
+                type="email"
+                placeholder="E-mail"
+                {...register("email")}
+              />
             </div>
             <div className="relative barra-horizontal">
-              <InputLogin type="password" placeholder="Senha" />
+              <InputLogin
+                type="password"
+                placeholder="Senha"
+                {...register("password")}
+              />
             </div>
             <div className="relative barra-horizontal afterConfirmarSenha">
-              <InputLogin type="password" placeholder="Confirmar Senha" />
+              <InputLogin
+                type="password"
+                placeholder="Confirmar Senha"
+                {...register("passwordConfirmed")}
+              />
             </div>
           </form>
         </WhiteBox>

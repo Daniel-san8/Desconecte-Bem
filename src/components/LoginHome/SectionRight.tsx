@@ -14,7 +14,6 @@ export default function SectionRight() {
     name: z.string().email("Por favor, insira um e-mail válido"),
     password: z.string().min(1, "A senha é obrigatória"),
   });
-
   const {
     handleSubmit,
     register,
@@ -66,7 +65,6 @@ export default function SectionRight() {
               autoComplete="email"
               {...register("name")}
             />
-            {errors.name?.message}
           </div>
           <div className="relative barra-horizontal ">
             <InputLogin
@@ -75,7 +73,6 @@ export default function SectionRight() {
               autoComplete="current-password"
               {...register("password")}
             />
-            {errors.password?.message}
           </div>
         </form>
         <Link

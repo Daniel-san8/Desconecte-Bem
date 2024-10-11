@@ -11,6 +11,7 @@ import StepFour from "./EsqueciSenha/StepFour";
 export default function EsqueciSenha() {
   const global = useGlobal();
   const { step } = global;
+
   React.useEffect(() => {
     document.title = "Esqueci a Senha | Desconecte Bem";
   }, []);
