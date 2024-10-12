@@ -11,7 +11,8 @@ export default function StepThree() {
   const global = useGlobal();
 
   const schemaStepThree = z.object({
-    stepThree: z.string(),
+    stepThreePassword: z.string(),
+    stepThreePasswordConfirmed: z.string(),
   });
 
   type TSchemaStepThree = z.infer<typeof schemaStepThree>;
@@ -39,12 +40,21 @@ export default function StepThree() {
           method="post"
           id="form-step-three"
           className="flex flex-col"
+          onSubmit={handleSubmit((data) => console.log(data))}
         >
           <div className="relative barra-horizontal mt-4 stepThreeAfterNone md:px-8 md:mt-2">
-            <InputLogin placeholder="Nova Senha" type="password" />
+            <InputLogin
+              placeholder="Nova Senha"
+              type="password"
+              {...register("stepThreePassword")}
+            />
           </div>
           <div className="relative barra-horizontal mt-4 stepThreeAfter md:px-8">
-            <InputLogin placeholder="Confirme sua nova senha" type="password" />
+            <InputLogin
+              placeholder="Confirme sua nova senha"
+              type="password"
+              {...register("stepThreePasswordConfirmed")}
+            />
           </div>
         </form>
       </WhiteBoxEsqueci>
