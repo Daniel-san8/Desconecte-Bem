@@ -60,6 +60,7 @@ export default function StepThree() {
       </WhiteBoxEsqueci>
 
       <ButtonLogin
+        functionButton={global.nextStep}
         texto="Salvar"
         idForm="form-step-three"
         className="text-white font-semibold bg-botaoLogin text-2xl px-8 py-2 rounded-full boxShadowButton md:text-3xl lg:rounded-none lg:rounded-l-full lg:rounded-br-full lg:px-10"
