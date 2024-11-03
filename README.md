@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+Projeto: Desconecte Bem
+Este projeto tem como objetivo promover o afastamento das redes sociais, permitindo que os usuários interajam com uma Inteligência Artificial (IA) chamada Gemini. O sistema oferece um espaço seguro para que os usuários façam requisições à IA, que fornecerá dicas e sugestões para ajudá-los a se concentrar em atividades que não envolvem redes sociais.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tecnologias Utilizadas
+Front-end:
 
-Currently, two official plugins are available:
+React
+TypeScript
+Back-end:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Python
+Funcionalidades
+Integração com IA: Os usuários podem fazer requisições através de um campo de input, recebendo respostas e dicas personalizadas da IA do Gemini.
+Interface amigável: A aplicação foi projetada com uma interface intuitiva, utilizando princípios de UI/UX para proporcionar uma experiência agradável ao usuário.
+Afastamento das redes sociais: O projeto visa encorajar os usuários a focar em atividades alternativas, reduzindo o tempo gasto em redes sociais.
 
-## Expanding the ESLint configuration
+Estrutura do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+.
+├── client/                 # Código do front-end
+│   ├── src/                # Fonte do React
+│   ├── public/             # Arquivos públicos
+│   ├── package.json         # Dependências do front-end
+│   └── ...
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
